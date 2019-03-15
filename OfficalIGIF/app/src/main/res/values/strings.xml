@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">iGIF</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_remove_from_favorite_list">Favorite Media</string>
+    <string name="messages_remove_from_favorite_list">Do you want to remove this item from your favorites?</string>
+    <string name="facebook_app_id">942604065922095</string>
+    <string name="fb_login_protocol_scheme">fb942604065922095</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cac6c6"
+    android:clickable="true"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:clipToPadding="true"
+            android:id="@+id/rl_title"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="6dp"
+                android:background="@drawable/background_red_round"
+                android:src="@drawable/ic_home_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="serif-monospace"
+                android:text="i G I F"
+                android:textColor="#ff00"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_search_title"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_search_black_24dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/title_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#45ffffff"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginBottom="2dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_arrow_red_48dp" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@id/iv_search"
+                android:layout_weight="8"
+                android:background="@android:color/transparent"
+                android:hint="Search all topics"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapWords"
+                android:textAlignment="center"
+                android:textColor="#ff00"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/ic_search_black_24dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+
+    </GridView>
+
+
+</android.support.constraint.ConstraintLayout>
